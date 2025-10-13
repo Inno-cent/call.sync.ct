@@ -5,13 +5,13 @@ import Login from '@/pages/auth/Login.vue'
 import Register from '@/pages/auth/Register.vue'
 
 // Dashboard + others
-import Dashboard from '@/pages/dashboard/Dashboard.vue'
-import ScheduleMeeting from '@/pages/meetings/ScheduleMeeting.vue'
-import MeetingRoom from '@/pages/meetings/MeetingRoom.vue'
-import Settings from '@/pages/settings/Settings.vue'
+// import Dashboard from '@/pages/dashboard/Dashboard.vue'
+// import ScheduleMeeting from '@/pages/meetings/ScheduleMeeting.vue'
+// import MeetingRoom from '@/pages/meetings/MeetingRoom.vue'
+// import Settings from '@/pages/settings/Settings.vue'
 
 const routes = [
-  { path: '/', redirect: '/dashboard' },
+//   { path: '/', redirect: '/dashboard' },
   { path: '/login', component: Login },
 //   { path: '/register', component: Register },
 //   { path: '/dashboard', component: Dashboard },
