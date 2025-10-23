@@ -1,24 +1,53 @@
 <template>
-  <header class="flex items-center justify-between px-6 py-4 shadow-sm bg-white/3 rounded-b-2xl">
+  <header
+    class="flex items-center justify-between px-6 py-4 bg-white/3 backdrop-blur-sm rounded-b-2xl"
+  >
     <div class="flex items-center gap-4">
-      <button @click="$emit('toggleSidebar')" class="btn-ghost">
-        <!-- <svg ... /> -->
+      <button
+        @click="$emit('toggleSidebar')"
+        class="p-2 rounded-md hover:bg-white/6"
+      >
+        ☰
       </button>
       <div class="relative">
-        <input v-model="query" placeholder="Search calls, contacts..." class="pl-10 pr-4 py-2 rounded-full bg-white/6 focus:ring-2 focus:ring-accent outline-none" />
-        <svg class="absolute left-3 top-2.5 w-5 h-5 text-white/60" .../>
+        <input
+          v-model="query"
+          placeholder="Search calls, contacts..."
+          class="input-glass pl-10 pr-4"
+        />
+        <svg
+          class="w-5 h-5 absolute left-3 top-3 text-white/60"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-4.35-4.35"
+          ></path>
+        </svg>
       </div>
     </div>
 
     <div class="flex items-center gap-4">
-      <NotificationBell />
+      <button class="p-2 rounded-md hover:bg-white/6">🔔</button>
       <div class="flex items-center gap-3">
-        <img src="/avatar.jpg" class="w-10 h-10 rounded-full border border-white/10"/>
-        <div class="hidden md:block">
-          <p class="text-white font-medium text-sm">Innocent</p>
-          <p class="text-white/60 text-xs">Available</p>
-        </div>
+        <img
+          src="/avatar.jpg"
+          class="w-10 h-10 rounded-full border border-white/10"
+        />
       </div>
     </div>
   </header>
 </template>
+
+
+<script>
+export default {
+  data() {
+    return { query: "" };
+  },
+};
+</script>
