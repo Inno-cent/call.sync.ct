@@ -31,7 +31,7 @@ import Signup from "@/pages/Auth/Signup.vue";
 import AppLayout from "@/layouts/AppLayout.vue";
 import Dashboard from "@/pages/dashboard/Dashboard.vue";
 import Scheduler from "@/pages/Scheduler/Scheduler.vue";
-// import Contacts from "@/pages/Contacts.vue";
+import Contacts from "@/pages/Contacts.vue";
 // import CallRoom from "@/pages/CallRoom.vue";
 // import Settings from "@/pages/Settings.vue";
 
@@ -45,7 +45,7 @@ const routes = [
     children: [
       { path: "dashboard", component: Dashboard },
       { path: "scheduler", component: Scheduler },
-//       { path: "contacts", component: Contacts },
+      { path: "contacts", component: Contacts },
 //       { path: "call/:id", component: CallRoom },
 //       { path: "settings", component: Settings },
     ],
