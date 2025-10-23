@@ -56,6 +56,6 @@
 
 <script>
 import CardGlass from "@/components/common/CardGlass.vue";
-import MiniCalendar from "@/components/common/MiniCalendar.vue";
+import MiniCalendar from "../../components/common/MiniCalender.vue";
 export default { components: { CardGlass, MiniCalendar } };
 </script>

@@ -35,7 +35,7 @@
       <button class="p-2 rounded-md hover:bg-white/6">🔔</button>
       <div class="flex items-center gap-3">
         <img
-          src="/avatar.jpg"
+          src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=400&q=80"
           class="w-10 h-10 rounded-full border border-white/10"
         />
       </div>
