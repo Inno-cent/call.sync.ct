@@ -33,7 +33,7 @@ import Dashboard from "@/pages/dashboard/Dashboard.vue";
 import Scheduler from "@/pages/Scheduler/Scheduler.vue";
 import Contacts from "@/pages/Contacts.vue";
 // import CallRoom from "@/pages/CallRoom.vue";
-// import Settings from "@/pages/Settings.vue";
+import Settings from "@/pages/Settings.vue";
 
 const routes = [
   { path: "/", redirect: "/auth/login" },
@@ -47,7 +47,7 @@ const routes = [
       { path: "scheduler", component: Scheduler },
       { path: "contacts", component: Contacts },
 //       { path: "call/:id", component: CallRoom },
-//       { path: "settings", component: Settings },
+      { path: "settings", component: Settings },
     ],
   },
 ];
