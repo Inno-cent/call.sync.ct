@@ -4,10 +4,33 @@
 @use "sass:meta";
 @import url("tailwindcss");
 
-
 /* Global customizations */
+html,
+body,
+#app {
+  height: 100%;
+}
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9fafb;
-  color: #1f2937;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+/* Utility classes for the polished UI */
+.card-glass {
+  @apply p-6 rounded-2xl bg-white/6 backdrop-blur-md border border-white/10 shadow-glass;
+}
+.input-glass {
+  @apply w-full px-4 py-3 rounded-xl bg-white/12 text-white placeholder-white/60 outline-none;
+}
+.btn-primary {
+  @apply px-4 py-3 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-medium;
+}
+
+/* Floating background orbs */
+.bg-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(40px);
+  opacity: 0.9;
+  mix-blend-mode: screen;
 }
