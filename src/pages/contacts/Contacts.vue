@@ -13,9 +13,25 @@
     </div>
 
     <div class="grid grid-cols-3 gap-4">
-      <ContactCard v-for="c in contacts" :key="c.id" :contact="c" />
+      <!-- <ContactCard v-for="c in contacts" :key="c.id" :contact="c" /> -->
     </div>
   </div>
 </template>
 
 
+<script>
+import ContactCard from "@/components/ContactCard.vue";
+export default {
+  components: { ContactCard },
+  data() {
+    return {
+      q: "",
+      contacts: Array.from({ length: 9 }).map((_, i) => ({
+        id: i,
+        name: `Person ${i + 1}`,
+        email: `p${i}@mail.com`,
+      })),
+    };
+  },
+};
+</script>
