@@ -19,7 +19,11 @@
 
 
 <script>
-
+import FullCalendar from "@fullcalendar/vue3";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
+import SchedulerModal from "@/components/SchedulerModal.vue";
+import { ref } from "vue";
 
 export default {
   components: { FullCalendar, SchedulerModal },
