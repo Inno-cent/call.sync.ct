@@ -23,7 +23,7 @@
           <input v-model="participants" class="input-glass mt-2" />
         </div>
 
-        <div class="col-span-2 flex gap-3 justify-end mt-2">
+        <!-- <div class="col-span-2 flex gap-3 justify-end mt-2">
           <button
             type="button"
             class="px-4 py-2 rounded-xl bg-white/6"
@@ -32,7 +32,7 @@
             Cancel
           </button>
           <button type="submit" class="btn-primary">Save</button>
-        </div>
+        </div> -->
       </form>
     </div>
   </div>
